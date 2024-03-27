@@ -12,26 +12,6 @@ window.game = game;
 window.view = view;
 window.controller = controller;
 
-document.addEventListener("keydown", (event) => {
-  switch (event.keyCode) {
-    case 37: // left arrow
-      game.movePieceLeft();
-      view.render(game.getState());
-      break;
-    case 38: // up arrow
-      game.rotatePiece();
-      view.render(game.getState());
-      break;
-    case 39: // right arrow
-      game.movePieceRight();
-      view.render(game.getState());
-      break;
-    case 40: // down arrow
-      game.movePieceDown();
-      view.render(game.getState());
-      break;
-  }
-});
 
 // view.render(game.getState());
 // view.renderEndScreen(game.getState())
