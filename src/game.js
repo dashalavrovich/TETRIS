@@ -70,7 +70,13 @@ export default class Game {
         }
       }
     }
-    return { playfield };
+    return {
+      score: this.score,
+      level: this.level,
+      lines: this.lines,
+      nextPiece: this.nextPiece,
+      playfield,
+    };
   }
 
   createPlayField() {
