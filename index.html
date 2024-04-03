@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Tetris</title>
+    <link rel="icon" href="img/free-icon-tetris.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container unselectable">
+      <div class="gameboy">
+        <div class="gameboy__screenzone">
+          <div id="root">
+            <h1><span>T</span><span>E</span><span>T</span><span>R</span><span>I</span><span>S</span></h1>
+          </div>
+          <div class="gameboy__keys gameboy__keys_options">
+            <div class="gameboy__key-wrapper">
+              <button class="gameboy__key gameboy__key_option" id="keyStart">
+                start
+              </button>
+            </div>
+            <div class="gameboy__key-wrapper">
+              <button class="gameboy__key gameboy__key_option" id="keyMusic">
+                music
+              </button>
+            </div>
+            <div class="gameboy__key-wrapper">
+              <button class="gameboy__key gameboy__key_option" id="keySound">
+                sound
+              </button>
+            </div>
+          </div>
+
+          <div class="gameboy__controlblock">
+            <div class="gameboy__keys gameboy__keys_control">
+              <button class="gameboy__key gameboy__key_control" id="keyUp">
+                &#8593;
+              </button>
+              <div class="gameboy__keys_control-wrapper">
+                <button class="gameboy__key gameboy__key_control" id="keyLeft">
+                  &#8592;
+                </button>
+                <button class="gameboy__key gameboy__key_control" id="keyRight">
+                  &#8594;
+                </button>
+              </div>
+              <button class="gameboy__key gameboy__key_control" id="keyDown">
+                &#8595;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
